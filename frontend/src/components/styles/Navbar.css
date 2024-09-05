@@ -1,0 +1,73 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 30px;
+  background-color: #4682B4; /* Steel Blue */
+  color: white;
+  height: 70px;
+}
+
+.logo {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+  font-style: italic;
+  
+}
+
+.nav-links a:hover {
+  color: #FFA500; /* Orange */
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      background-color: #4682B4;
+      width: 100%;
+      text-align: right;
+  }
+
+  .nav-links.mobile-menu {
+      display: flex;
+      padding-right: 20px;
+      text-align: right;
+  }
+
+  .hamburger {
+      display: flex;
+  }
+}

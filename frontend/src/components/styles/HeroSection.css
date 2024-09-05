@@ -1,0 +1,103 @@
+/* Hero Section Styles */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 80vh; /* Adjust this value to increase or decrease the height */
+  position: relative;
+}
+
+.hero-image-container {
+  flex: 2;
+  height: 100%;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This ensures the image covers the container without distorting */
+  border-radius: 10px;
+}
+
+.hero-form-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Slight white background with transparency */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  margin-left: 20px;
+  max-width: 400px; /* Limit the form width */
+  height: 500px;
+}
+
+.hero-form-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #4682b4;
+  text-align: center;
+}
+
+.hero-form-container form {
+  width: 100%; /* Make sure the form takes up the full width of the container */
+}
+
+.hero-form-container input,
+.hero-form-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box; 
+}
+
+.hero-form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4682b4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.hero-form-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  font-size: 0.8em;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-section {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+  }
+
+  .hero-form-container {
+      margin: 20px 0 0 0;
+      width: 100%;
+  }
+
+  .hero-image-container {
+      height: 50vh;
+      width: 100%;
+  }
+}

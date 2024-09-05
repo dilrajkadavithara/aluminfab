@@ -1,0 +1,28 @@
+.footer {
+  background-color: #004aad; /* Consistent with the theme */
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-family: 'Roboto', sans-serif; /* A clean, professional font */
+}
+
+.footer h3 {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.footer p {
+  margin: 10px 0;
+  font-size: 1em;
+  color: #ccc;
+}
+
+.footer p:last-child {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #ddd;
+}

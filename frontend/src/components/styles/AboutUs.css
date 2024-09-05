@@ -1,0 +1,74 @@
+/* About Us Section Styles */
+.about-us {
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us-content {
+  max-width: 1300px;
+  padding: 40px;
+  background-color: white; /* White background for content */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid #4682B4; /* Steel Blue border */
+  text-align: left;
+  margin-top: 40px;
+}
+
+.about-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #4682B4; /* Steel Blue heading */
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-us p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Lato', sans-serif; /* Clean, readable font */
+}
+
+.about-us strong {
+  font-weight: bold;
+  color: #FFA500; /* Orange color for emphasis */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+
+  .about-us{
+    margin-top: 200px;
+  }
+  .about-us-content {
+      max-width: 90%; /* Reduce max-width to fit content better on smaller screens */
+      margin-top: 20px; /* Adjust spacing */
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us-content {
+      max-width: 100%; /* Full width on smaller screens */
+      padding: 20px; /* Reduced padding for smaller screens */
+      margin-top: 20px; /* Adjust spacing */
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us-content {
+      padding: 15px; /* Further reduce padding for very small screens */
+  }
+
+  .about-us h2 {
+      font-size: 2rem; /* Adjust heading size for smaller screens */
+  }
+
+  .about-us p {
+      font-size: 1rem; /* Adjust paragraph size for better readability on small screens */
+  }
+}
